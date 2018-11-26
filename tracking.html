@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <p id="fingerprint">Hello</p>
+    <script>
+        $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
+            $(document.body).append(JSON.stringify(data, null, 2));
+            console.log(JSON.stringify(data, null, 2));
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <p id="fingerprint">Hello</p>
+    <script>
+            
+            $(document).on('page:change ready', function () {
+            checkCookie();
+            });
+    
+            // BEHOLD MY MIGHTY FUNCTIONS !!
+    
+            var refreshed_value
+    
+            function checkCookie(){
+            var cookie=getCookie("_sushio_user_navigation", " bolo");
+            if (cookie!=""){
+                setCookie('_sushio_user_navigation',refreshed_value, 1);
+            }
+            else{
+                setCookie('_sushio_user_navigation','bolo', 1);
+            }
+            }
+    
+            function getCookie(cname, new_value){
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++){
+                var c = ca[i].trim();
+                var value = c.split('=').pop()
+                refreshed_value = value + "," + new_value;
+                if (c.indexOf(name)==0) return c.substring(name.length, c.length);
+            }
+            return "";
+            }
+    
+            function setCookie(cname,cvalue,exdays){
+            var d = new Date();
+            d.setTime(d.getTime()+(exdays*24*60*60*1000));
+            var expires = "expires="+d.toGMTString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+            }
+            $(document.body).append('hey');
+            $(document.body).append(getCookie("_sushio_user_navigation", " bolo"));
+        </script>
+</body>
+</html> -->

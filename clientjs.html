@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <script src="js/clientjs/dist/client.min.js"></script>
+</head>
+<body>
+    <p id="fingerprint"></p>
+    <script>
+        // Create a new ClientJS object
+        var client = new ClientJS();
+        var referrer = document.referrer;
+
+        // Get the client's fingerprint id
+        document.write("ref:" + escape(referrer) + "<br>");
+        document.write(client.getBrowserData().ua + "<br>");
+        document.write(client.getFingerprint() + "<br>");
+        // client.getCustomFingerprint(...);
+
+        document.write(client.getUserAgent() + "<br>");
+        document.write(client.getUserAgentLowerCase() + "<br>");
+
+        document.write(client.getBrowser() + "<br>");
+        document.write(client.getBrowserVersion() + "<br>");
+        document.write(client.getBrowserMajorVersion() + "<br>");
+        document.write(client.isIE() + "<br>");
+        document.write(client.isChrome() + "<br>");
+        document.write(client.isFirefox() + "<br>");
+        document.write(client.isSafari() + "<br>");
+        document.write(client.isOpera() + "<br>");
+
+        document.write(client.getEngine() + "<br>");
+        document.write(client.getEngineVersion() + "<br>");
+
+        document.write(client.getOS() + "<br>");
+        document.write(client.getOSVersion() + "<br>");
+        document.write(client.isWindows() + "<br>");
+        document.write(client.isMac() + "<br>");
+        document.write(client.isLinux() + "<br>");
+        document.write(client.isUbuntu() + "<br>");
+        document.write(client.isSolaris() + "<br>");
+
+        document.write(client.getDevice() + "<br>");
+        document.write(client.getDeviceType() + "<br>");
+        document.write(client.getDeviceVendor() + "<br>");
+
+        document.write(client.getCPU() + "<br>");
+
+        document.write(client.isMobile() + "<br>");
+        document.write(client.isMobileMajor() + "<br>");
+        document.write(client.isMobileAndroid() + "<br>");
+        document.write(client.isMobileOpera() + "<br>");
+        document.write(client.isMobileWindows() + "<br>");
+        document.write(client.isMobileBlackBerry() + "<br>");
+
+        document.write(client.isMobileIOS() + "<br>");
+        document.write(client.isIphone() + "<br>");
+        document.write(client.isIpad() + "<br>");
+        document.write(client.isIpod() + "<br>");
+
+        document.write(client.getScreenPrint() + "<br>");
+        document.write(client.getColorDepth() + "<br>");
+        document.write(client.getCurrentResolution() + "<br>");
+        document.write(client.getAvailableResolution() + "<br>");
+        document.write(client.getDeviceXDPI() + "<br>");
+        document.write(client.getDeviceYDPI() + "<br>");
+
+        document.write(client.getPlugins() + "<br>");
+        document.write(client.isJava() + "<br>");
+        document.write(client.getJavaVersion() + "<br>");
+        document.write(client.isFlash() + "<br>");
+        document.write(client.getFlashVersion() + "<br>");
+        document.write(client.isSilverlight() + "<br>");
+        document.write(client.getSilverlightVersion() + "<br>");
+
+        document.write(client.getMimeTypes() + "<br>");
+        document.write(client.isMimeTypes() + "<br>");
+
+        document.write(client.isFont() + "<br>");
+        document.write(client.getFonts() + "<br>");
+
+        document.write(client.isLocalStorage() + "<br>");
+        document.write(client.isSessionStorage() + "<br>");
+        document.write(client.isCookie() + "hello<br>");
+        // document.write(client.getCookies() + "<br>");
+
+        document.write(client.getTimeZone() + "<br>");
+
+        document.write(client.getLanguage() + "<br>");
+        document.write(client.getSystemLanguage() + "<br>");
+
+        document.write(client.isCanvas() + "<br>");
+        document.write(client.getCanvasPrint() + "<br>");
+        // document.getElementById("fingerprint").innerHTML = fingerprint;
+
+        // Print the 32bit hash id to the console
+        // console.log(fingerprint);
+    </script>
+</body>
+</html>
