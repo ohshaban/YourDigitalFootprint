@@ -9,8 +9,9 @@
     <script>
         $(document.body).append("hey");
         $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
-            $(document.body).append(JSON.stringify(data, null, 2));
-            console.log(JSON.stringify(data, null, 2));
+            $(document.body).append("JSON");
+            // $(document.body).append(JSON.stringify(data, null, 2));
+            // console.log(JSON.stringify(data, null, 2));
         });
     </script>
 </body>
