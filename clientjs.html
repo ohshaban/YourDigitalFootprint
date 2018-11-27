@@ -11,7 +11,7 @@
         var referrer = document.referrer;
 
         // Get the client's fingerprint id
-        document.write("ref:" + escape(referrer) + "<br>");
+        document.write("ref:" + (referrer) + "<br>");
         document.write(client.getBrowserData().ua + "<br>");
         document.write(client.getFingerprint() + "<br>");
         // client.getCustomFingerprint(...);
