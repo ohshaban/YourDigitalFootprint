@@ -5,11 +5,9 @@
     
 </head>
 <body>
-    <p id="fingerprint">Hello 3</p>
+    <p id="fingerprint">Hello</p>
     <script>
-        $(document.body).append("hey");
-        $.getJSON('https://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
-            // $(document.body).append("JSON");
+        $.getJSON('https://ipapi.co/json/', function(data) {
             $(document.body).append(JSON.stringify(data, null, 2));
             console.log(JSON.stringify(data, null, 2));
         });
