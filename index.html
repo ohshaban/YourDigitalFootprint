@@ -57,7 +57,7 @@
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- <script src="js/clientjs/dist/client.min.js"></script> -->
+	<script src="js/clientjs/dist/client.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -87,8 +87,8 @@
 		<div class="top-menu">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-4">
-						<div id="fh5co-logo"><a href="index.html">Your Digital Footprint</a></div>
+					<div class="col-xs-4" style="width: 35%; padding-left: 3px; padding-right: 3px;">
+						<div id="fh5co-logo"><a href="index.html" style="color: #EA9215">Your Digital Footprint</a></div>
 					</div>
 					<div class="col-xs-13 text-right menu-1">
 						<ul>
@@ -129,24 +129,13 @@
 		</div>
 	</header>
 
-	<div id="fh5co-counter" class="fh5co-counters">
+	<div id="fh5co-project">
 		<div class="container">
-			<div class="row">
-				<div class="text-center animate-box">
-					<span class="fh5co-counter js-counter" data-from="0" data-to="40356" data-speed="5000" data-refresh-interval="50"></span>
-					<span class="fh5co-counter-label">Your Browser Fingerprint</span>
-				</div>
-				<!-- <div class="col-md-3 text-center animate-box">
-					<span class="fh5co-counter js-counter" data-from="0" data-to="30290" data-speed="5000" data-refresh-interval="50"></span>
-					<span class="fh5co-counter-label">Courses</span>
-				</div>
-				<div class="col-md-3 text-center animate-box">
-					<span class="fh5co-counter js-counter" data-from="0" data-to="2039" data-speed="5000" data-refresh-interval="50"></span>
-					<span class="fh5co-counter-label">Instructor</span>
-				</div>
-				<div class="col-md-3 text-center animate-box">
-					<span class="fh5co-counter js-counter" data-from="0" data-to="997585" data-speed="5000" data-refresh-interval="50"></span>
-					<span class="fh5co-counter-label">Earnings</span> -->
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 fh5co-heading">
+					<!-- <h2>Showcase of A Finish Projects</h2> -->
+					<p>The Internet is one of the most rapidly changing creations in the history of mankind. Every change to the Internet brings about changes to fundamental aspects of our daily lives. For example, being social and interacting with other people can be seen in a whole new light with the advent of social media and networking sites. Similarly, privacy and security have transformed into something completely different than what they used to be thirty years ago. As a result, privacy policies in the US, like the Electronic Communications Privacy Act (ECPA), has not been able to keep up with the changes to the way we use technology and the Internet and how that affects our privacy (White House Report 49).</p><br>
+					<p>However, this is not our biggest problem; the biggest problem lies in the fact that we, as users of the Internet, have chosen to ignore any and all privacy concerns when it comes to using the Internet. We seem to have accepted the fact that in order to use the Internet, we must give up our right to have our personal and sensitive information private. This website addresses this concern by pointing out the flaws of Internet privacy and informing readers about how to protect their personal information.</p>
 				</div>
 			</div>
 		</div>
@@ -159,7 +148,52 @@
 					<h2>Take A Course</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
 				</div>
-				<div id="googleMap" style="width:100%; height:400px;"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-counter" class="fh5co-counters">
+		<div class="container">
+			<div class="row">
+				<div class="text-center animate-box">
+					<span id="fingerprint" class="fh5co-counter js-counter" data-from="0" data-to="" data-speed="2500" data-refresh-interval="35"></span>
+					<span class="fh5co-counter-label">Your Browser Fingerprint</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div id="fh5co-counter" class="fh5co-counters">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 text-center animate-box">
+					<span class="fh5co-counter js-counter" data-from="0" data-to="40356" data-speed="5000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">Your Browser Fingerprint</span>
+				</div>
+				<div class="col-md-3 text-center animate-box">
+					<span class="fh5co-counter js-counter" data-from="0" data-to="30290" data-speed="5000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">IP Address</span>
+				</div>
+				<div class="col-md-3 text-center animate-box">
+					<span class="fh5co-counter js-counter" data-from="0" data-to="2039" data-speed="5000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">Instructor</span>
+				</div>
+				<div class="col-md-3 text-center animate-box">
+					<span class="fh5co-counter js-counter" data-from="0" data-to="997585" data-speed="5000" data-refresh-interval="50"></span>
+					<span class="fh5co-counter-label">Earnings</span>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div id="fh5co-explore" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Take A Course</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+				</div>
+				<div id="myMap" style="width:100%; height:400px;"></div>
 			</div>
 		</div>
 		<div class="fh5co-explore fh5co-explore1">
@@ -522,11 +556,49 @@
 
 	<script>
 		$.getJSON('https://ipapi.co/json/', function(data) {
-            $(document.body).append(JSON.stringify(data, null, 2));
-            console.log(JSON.stringify(data, null, 2));
+            // $(document.body).append(JSON.stringify(data, null, 2));
+			lat = data["latitude"];
+			long = data["longitude"];
+			// $(document.body).append(data["latitude"] + "<br>");
+			// $(document.body).append(data["longitude"]);
+			initMap(lat, long)
+            // console.log(JSON.stringify(data, null, 2));
         });
 	</script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSc9rIKb0LwMNYFNtvmiXW1RLoBOdBZb8&callback=myMap"></script>
+	<script>
+		var map;
+		function initMap(latitude, longitude) {
+			map = new google.maps.Map(document.getElementById('myMap'), {
+				center: {lat: latitude, lng: longitude},
+				zoom: 8
+			});
+			var marker = new google.maps.Marker({
+				position:{lat: latitude, lng: longitude},
+				animation:google.maps.Animation.BOUNCE
+  			});
+			marker.setMap(map);
+		}
+	</script>
+	<script>
+
+        // Create a new ClientJS object
+        var client = new ClientJS();
+        var referrer = document.referrer;
+
+		document.getElementById("fingerprint").setAttribute("data-to", client.getFingerprint())
+
+		function getFingerprint() {
+			// Get the client's fingerprint id
+			// document.write("ref:" + (referrer) + "<br>");
+			// document.write(client.getBrowserData().ua + "<br>");
+			return client.getFingerprint();
+		}
+        // document.getElementById("fingerprint").innerHTML = fingerprint;
+
+        // Print the 32bit hash id to the console
+        // console.log(fingerprint);
+    </script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->

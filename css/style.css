@@ -137,6 +137,9 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 5px 10px;
   color: #fff;
 }
+.fh5co-nav #fh5co-logo a:hover {
+  color: #EA9215
+}
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
     display: none;
@@ -357,7 +360,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 700px;
   display: table;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 25px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
@@ -500,7 +503,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-blog,
 #fh5co-contact,
 #fh5co-footer {
-  padding: 7em 0;
+  padding: 5em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -771,7 +774,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 0em;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
@@ -784,7 +787,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-heading p {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
   color: #828282;
 }
 .fh5co-heading span {
