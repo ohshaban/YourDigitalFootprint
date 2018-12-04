@@ -101,7 +101,15 @@
 									<li><a href="#">Government Access</a></li>
 								</ul>
 							</li>
-							<li><a href="protect.html">Protect Your Privacy</a></li>
+							<li class="has-dropdown">
+								<a href="protect.html">Protect Your Privacy</a>
+								<ul class="dropdown">
+									<li><a href="protect.html#extensions">Anti-tracking Extensions</a></li>
+									<li><a href="protect.html#vpn">Virtual Private Networks (VPN)</a></li>
+									<li><a href="protect.html#tor">Tor</a></li>
+									<li><a href="protect.html#tails">TAILS</a></li>
+								</ul>
+							</li>
 							<!-- <li class="btn-cta"><a href="clientjs.html"><span>Login</span></a></li>
 							<li class="btn-cta"><a href="#"><span>Create a Course</span></a></li> -->
 						</ul>
@@ -144,20 +152,91 @@
 	<div id="fh5co-explore" class="fh5co-bg-section">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>How severe is the issue?</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+				<div class="col-md-8 col-md-offset-2 fh5co-heading">
+					<h2 style="text-align: center;">Should I Be Worried?</h2>
+					<p>In order to demonstrate the extent of the issues surrounding Internet privacy, it would be rather beneficial to have you answer this question for yourself. To do that, it is important to understand what exactly is at stake here.</p>
+					<p>For example, you might be surprised to know that the Google Map shown below has a dropped pin over your approximate location which we were able to obtian without requiring your permission.</p>
 				</div>
+				<div id="myMap" style="width:100%; height:400px;"></div>
 			</div>
 		</div>
 	</div>
 
 	<div id="fh5co-counter" class="fh5co-counters">
 		<div class="container">
-			<div class="row">
-				<div class="text-center animate-box">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 fh5co-heading">
+					<!-- <h2 style="text-align: center;">Should I Be Worried?</h2> -->
+					<p>In addition to your location, we were able to obtain your browser fingerprint. "Browser fingerprinting uses individual characteristics of your browser to identify you, often uniquely, without cookies." (Kernighan 211)</p>
+					<p>What this fingerprint means is that we can uniquely identify you if you were to ever visit our website again, and the characteristics that were used to create this fingerprint again didn't require any permissions.</p>
+					<p>Below is a summary of just some of the data we were able to obtain about you including your uniquely-identifying browser fingerprint, IP Address, and location.</p>
+					<br>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-6 text-center animate-box">
 					<span id="fingerprint" class="fh5co-counter js-counter" data-from="0" data-to="" data-speed="2500" data-refresh-interval="35"></span>
 					<span class="fh5co-counter-label">Your Browser Fingerprint</span>
+				</div>
+				<div id="ipAddress" class="col-md-6 text-center animate-box">
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-6 text-center animate-box">
+					<span id="city" class="fh5co-counter"></span>
+					<span class="fh5co-counter-label">Your City</span>
+				</div>
+				<div class="col-md-6 text-center animate-box">
+					<span id="region" class="fh5co-counter"></span>
+					<span class="fh5co-counter-label">Your Region</span>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-6 text-center animate-box">
+					<span id="country" class="fh5co-counter"></span>
+					<span class="fh5co-counter-label">Your Country</span>
+				</div>
+				<div class="col-md-6 text-center animate-box">
+					<span id="isp" class="fh5co-counter"></span>
+					<span class="fh5co-counter-label">Your Internet Service Provider</span>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-6 text-center animate-box">
+					<span id="browser" class="fh5co-counter"></span>
+					<span class="fh5co-counter-label">Your Browser</span>
+				</div>
+				<div class="col-md-6 text-center animate-box">
+					<span id="os" class="fh5co-counter"></span>
+					<span class="fh5co-counter-label">Your Operating System</span>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-6 text-center animate-box">
+					<span id="device" class="fh5co-counter"></span>
+					<span class="fh5co-counter-label">Your Device</span>
+				</div>
+				<div class="col-md-6 text-center animate-box">
+					<span id="cpu" class="fh5co-counter"></span>
+					<span class="fh5co-counter-label">Your CPU</span>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-6 text-center animate-box">
+					<span id="resolution" class="fh5co-counter"></span>
+					<span class="fh5co-counter-label">Your Screen Resolution</span>
+				</div>
+				<div class="col-md-6 text-center animate-box">
+					<span id="language" class="fh5co-counter"></span>
+					<span class="fh5co-counter-label">Your Language</span>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 fh5co-heading">
+					<!-- <h2 style="text-align: center;">Should I Be Worried?</h2> -->
+					<p>It is worth noting that this data is what a group of college students were able to obtain (and collect if we so wish) with only a couple of hours of work and no prior JavaScript knowledge. Yet, it is enough to locate and uniquely identify you.</p>
+					<p>In addition, this data is only a small fraction of what companies know and collect about you nowadays. You can <a href="collection.html">click here</a> to learn more about data collection and the common tracking techniques used today.</p>
+					<br>
 				</div>
 			</div>
 		</div>
@@ -165,12 +244,12 @@
 
 	<!-- <div id="fh5co-counter" class="fh5co-counters">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-3 text-center animate-box">
+			<div class="row text-center">
+				<div class="col-md-6 text-center animate-box">
 					<span class="fh5co-counter js-counter" data-from="0" data-to="40356" data-speed="5000" data-refresh-interval="50"></span>
 					<span class="fh5co-counter-label">Your Browser Fingerprint</span>
 				</div>
-				<div class="col-md-3 text-center animate-box">
+				<div class="col-md-6 text-center animate-box">
 					<span class="fh5co-counter js-counter" data-from="0" data-to="30290" data-speed="5000" data-refresh-interval="50"></span>
 					<span class="fh5co-counter-label">IP Address</span>
 				</div>
@@ -186,14 +265,13 @@
 		</div>
 	</div> -->
 
-	<div id="fh5co-explore" class="fh5co-bg-section">
+	<!-- <div id="fh5co-explore" class="fh5co-bg-section">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>Take A Course</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
 				</div>
-				<div id="myMap" style="width:100%; height:400px;"></div>
 			</div>
 		</div>
 		<div class="fh5co-explore fh5co-explore1">
@@ -335,21 +413,21 @@
 					<div class="bs-wizard-info text-center"><p>Create A Free Course</p></div>
 				</div>
 
-				<div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+				<div class="col-xs-3 bs-wizard-step active">
 					<div class="text-center bs-wizard-stepnum"><h4>Step 2</h4></div>
 					<div class="progress"><div class="progress-bar"></div></div>
 					<a href="#" class="bs-wizard-dot"></a>
 					<div class="bs-wizard-info text-center"><p>Upload Content</p></div>
 				</div>
 
-				<div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
+				<div class="col-xs-3 bs-wizard-step disabled">
 					<div class="text-center bs-wizard-stepnum"><h4>Step 3</h4></div>
 					<div class="progress"><div class="progress-bar"></div></div>
 					<a href="#" class="bs-wizard-dot"></a>
 					<div class="bs-wizard-info text-center"><p>Make Your Course Beautiful</p></div>
 				</div>
 
-				<div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+				<div class="col-xs-3 bs-wizard-step disabled">
 					<div class="text-center bs-wizard-stepnum"><h4>Step 4</h4></div>
 					<div class="progress"><div class="progress-bar"></div></div>
 					<a href="#" class="bs-wizard-dot"></a>
@@ -476,11 +554,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
-			<div class="row row-pb-md">
+			<!-- <div class="row row-pb-md">
 				<div class="col-md-3 fh5co-widget">
 					<h4>About Learning</h4>
 					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
@@ -527,7 +605,7 @@
 						<li><a href="#">API</a></li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
@@ -535,14 +613,14 @@
 						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
 						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
 					</p>
-					<p>
+					<!-- <p>
 						<ul class="fh5co-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
 							<li><a href="#"><i class="icon-linkedin"></i></a></li>
 							<li><a href="#"><i class="icon-dribbble"></i></a></li>
 						</ul>
-					</p>
+					</p> -->
 				</div>
 			</div>
 
@@ -559,11 +637,22 @@
             // $(document.body).append(JSON.stringify(data, null, 2));
 			lat = data["latitude"];
 			long = data["longitude"];
-			// $(document.body).append(data["latitude"] + "<br>");
-			// $(document.body).append(data["longitude"]);
-			initMap(lat, long)
+			ipAddress = data["ip"];
+			ip = ipAddress.split(".");
+
+			$("#ipAddress").append('<span id="ipAddress1" class="fh5co-counter js-counter" data-from="0" data-to="' + ip[0] + '" data-speed="2000" data-refresh-interval="50"></span><span class="fh5co-counter">.</span>' +
+					'<span id="ipAddress2" class="fh5co-counter js-counter" data-from="0" data-to="' + ip[1] + '" data-speed="2000" data-refresh-interval="50"></span><span class="fh5co-counter">.</span>' +
+					'<span id="ipAddress3" class="fh5co-counter js-counter" data-from="0" data-to="' + ip[2] + '" data-speed="2000" data-refresh-interval="50"></span><span class="fh5co-counter">.</span>' +
+					'<span id="ipAddress4" class="fh5co-counter js-counter" data-from="0" data-to="' + ip[3] + '" data-speed="2000" data-refresh-interval="50"></span>' +
+					'<span class="fh5co-counter-label">Your IP Address</span>')
+			$("#city").text(data["city"])
+			$("#region").text(data["region"])
+			$("#country").text(data["country_name"])
+			$("#isp").text(data["org"])
+			initMap(lat, long);
             // console.log(JSON.stringify(data, null, 2));
         });
+		
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSc9rIKb0LwMNYFNtvmiXW1RLoBOdBZb8&callback=myMap"></script>
 	<script>
@@ -586,7 +675,16 @@
         var client = new ClientJS();
         var referrer = document.referrer;
 
-		document.getElementById("fingerprint").setAttribute("data-to", client.getFingerprint())
+		document.getElementById("fingerprint").setAttribute("data-to", client.getFingerprint());
+		document.getElementById("browser").textContent = client.getBrowser() + " " + client.getBrowserMajorVersion();
+		document.getElementById("os").textContent = client.getOS() + " " + client.getOSVersion();
+		document.getElementById("device").textContent = client.getDevice();
+		if(!client.getDevice()) {
+			document.getElementById("device").textContent = "N/A";
+		}
+		document.getElementById("cpu").textContent = client.getCPU();
+		document.getElementById("resolution").textContent = client.getCurrentResolution();
+		document.getElementById("language").textContent = client.getLanguage();
 
 		function getFingerprint() {
 			// Get the client's fingerprint id

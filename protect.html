@@ -84,7 +84,15 @@
 									<li><a href="#">Government Access</a></li>
 								</ul>
 							</li>
-							<li><a href="protect.html" style="color: #EA9215">Protect Your Privacy</a></li>
+							<li class="has-dropdown">
+								<a href="protect.html" style="color: #EA9215">Protect Your Privacy</a>
+								<ul class="dropdown">
+									<li><a href="#extensions">Anti-tracking Extensions</a></li>
+									<li><a href="#vpn">Virtual Private Networks (VPN)</a></li>
+									<li><a href="#tor">Tor</a></li>
+									<li><a href="#tails">TAILS</a></li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -109,16 +117,18 @@
 		</div>
 	</header>
 
-	<div id="fh5co-explore" class="fh5co-bg-section">
+	<div id="fh5co-project">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>Take A Course</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+				<div class="col-md-8 col-md-offset-2 fh5co-heading">
+					<!-- <h2>Take A Course</h2> -->
+					<p>The common belief that everyone has anonymity online is false. Each access to the internet reveals something about you. This information might not be things like your middle name or where you ate last night, but more technical information pulled from your laptop/computer. Accessing the internet requires the use of your IP address, which is essentially a ‘fingerprint’, and your IP address provides your ISP (Internet Service Provider), which can give anyone a rough estimate of where you are located. The usefulness of this information completely depends on your location: your approximate location in a rural part of town is more useful than your approximate location at Times Square during New Year's Eve.</p>
+					<p>The biggest mistake is to think information being sent over an app, like Snapchat, is truly private. In the privacy terms that no one reads, Snapchat specifically says, “We also sometimes receive requests from law enforcement requiring us by law to suspend our ordinary server-deletion practices for specific information.” Unfortunately, this clause is present with most apps and really contradicts the common belief of privacy. This begs the question, can we really have privacy on the internet?</p>
+					<p>There are definitely ways to improve your privacy. If you use panopticlick.eff.org, you can really see how unique you are compared with everyone else. I saw that a laptop that uses a simple adblocker and nothing else had a uniqueness of 1 in 1,318,393. You might think the odds are pretty good because there are millions of people, but paired with your IP address, ISP information, and rough estimate, it’s a scary specification. So how can we improve this?</p>
 				</div>
 			</div>
-		</div>		
-		<div class="fh5co-explore fh5co-explore1">
+		</div>
+		<!-- <div class="fh5co-explore fh5co-explore1">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-push-5 animate-box">
@@ -164,21 +174,79 @@
 					</div>
 				</div>
 			</div>
+		</div> -->
+	</div>
+
+	<div id="fh5co-explore" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 fh5co-heading">
+					<h1 style="text-align: center;">Precautions</h1><br>
+					<a name="extensions"></a><br>
+					<h3 style="font-weight: bold;">Anti-tracking Extensions</h3>
+					<p>Internet companies have an incentive to track their users’ action on the Internet. Therefore, anti-tracking extensions to block the internet providers from collecting cookies is essential. There are popular extensions, like Ghostery, and they all use a major technology called Do Not Track (DNT). DNT basically presents the option to opt out of tracking by websites. A simpler method of implementing DNT is through the Chrome settings. After going into the advanced settings, there will be a switch that says, “Send a “Do Not Track” request with your browsing traffic.” This basically gives you more say in whether you want your data to be tracked (you don’t). Users can also use script blockers which simply kills scripts and widgets that send advertisement to your screen. NoTrack is a great script blocker.</p>
+					<p>An alternative to these anti-tracking extensions can be to use a browser like Brave. Brave simply incorporates all of these precautions and neatly presents a Chrome-like structure for easy use.</p>
+					<!-- <a href="#" class="btn btn-primary">Read More</a> -->
+					<div class="col-md-12 text-center animate-box">
+						<p><a class="btn btn-primary btn-lg btn-learn" href="https://brave.com/download/">Download Brave</a></p>
+					</div>
+					<br><br><br><br><br>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 fh5co-heading">
+					<a name="vpn"></a>
+					<h3 style="font-weight: bold;">Virtual Private Networks (VPN)</h3>
+					<p>VPNs are an easy way to mask your identity as well. VPN servers create a ‘tunnel’ on the internet. Any information you send is encrypted. Therefore, a VPN protects your sensitive information like credit card numbers and passwords. The VPN server basically hides your IP address and replaces it with the IP address of the VPN server.</p>
+					<div class="text-center">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/_wQTRMBAvzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<br><br>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 fh5co-heading">
+					<a name="tor"></a>
+					<h3 style="font-weight: bold;">Tor</h3>
+					<p>A simple precaution could be to use Tor and its browser. Tor uses cryptography, which is a method of encryption that is used to conceal conversations. Tor stands for “The Onion Router”: the cryptography used conceals each conversation layer by layer rather than a direct connection from your device to another, hence the analogy of an onion. Basically, each message is wrapped in multiple layers of encryption, one for each relay. Each relay removes one layer as it sends the message onward. The same technique is used in the reverse direction. Normally three relays are used, so the one in the middle knows nothing about the origin or destination. Therefore, the final relay only knows what the previous relay is and not where it originated. Tor randomly picks relays around the world to setup the path that messages go through. These paths and relays change over time. It’s always interesting to open the weather channel and see where “you are” currently. When using panopticlick.eff.org, Tor suggested that I had a uniqueness of about 6000 to 6,000,000. Although this isn’t absolute anonymity, it is a major improvement.</p>
+					<div class="text-center">
+						<iframe style="align-self: center;" width="560" height="315" src="https://www.youtube.com/embed/wlP1JrfvUo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<br><br>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 fh5co-heading">
+					<a name="tails"></a>
+					<h3 style="font-weight: bold;">TAILS</h3>
+					<p>Another system that can be used is TAILS, which is an acronym for ‘The Amnesic Incognito Live System’. This system runs Tor and leaves on trace the computer that is being used. Every information being stored is on the RAM, which clears when the computer is shut down.</p>
+					<div class="text-center">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/f7bcM7XQuLQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<br><br>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-project">
+	<!-- <div id="fh5co-project">
 		<div class="container-fluid proj-bottom">
 			<div class="row">
 				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
 					<a href="#"><img src="images/project-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Web Master</h3>
+						<h3>Anti-tracking Extensions</h3>
 						<span>View Course</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
 					<a href="#"><img src="images/project-2.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Virtual Assistant</h3>
+						<h3>Virtual Private Network</h3>
 						<span>View Course</span>
 					</a>
 				</div>
@@ -246,76 +314,17 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<footer id="fh5co-footer" role="contentinfo">
-		<div class="container">
-			<div class="row row-pb-md">
-				<div class="col-md-3 fh5co-widget">
-					<h4>About Learning</h4>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-				</div>
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<h4>Learning</h4>
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Course</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Terms</a></li>
-						<li><a href="#">Meetups</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<h4>Learn &amp; Grow</h4>
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Testimonials</a></li>
-						<li><a href="#">Handbook</a></li>
-						<li><a href="#">Held Desk</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<h4>Engage us</h4>
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Marketing</a></li>
-						<li><a href="#">Visual Assistant</a></li>
-						<li><a href="#">System Analysis</a></li>
-						<li><a href="#">Advertise</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<h4>Legal</h4>
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Find Designers</a></li>
-						<li><a href="#">Find Developers</a></li>
-						<li><a href="#">Teams</a></li>
-						<li><a href="#">Advertise</a></li>
-						<li><a href="#">API</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="row copyright">
+		<div class="container"><div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
 						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
 						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
 					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</p>
 				</div>
 			</div>
-
 		</div>
 	</footer>
 	</div>
