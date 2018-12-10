@@ -80,8 +80,8 @@
 							<li class="has-dropdown">
 								<a href="misuse.html" style="color: #EA9215">Data Misuse</a>
 								<ul class="dropdown">
-									<li><a href="#">Targeted Advertisements</a></li>
-									<li><a href="#">Government Access</a></li>
+									<li><a href="#targetedadvertising">Targeted Advertisements</a></li>
+									<li><a href="#governmentaccess">Government Access</a></li>
 								</ul>
 							</li>
 							<li class="has-dropdown">
@@ -117,21 +117,17 @@
 		</div>
 	</header>
 
-	<div id="fh5co-explore" class="fh5co-bg-section">
+	<div id="fh5co-explore" class="fh5co-section">
 		<div class="container">
 			<div class="row animate-box text-center">
-				<h2>Targeted Advertising</h2>
+				<h2 id="targetedadvertising">Targeted Advertising</h2>
 			</div>
-		</div>
-	</div>
 
-	<div class="fh5co-bg-section">
-		<div class="container">
+			<br />
 			<div class="row animate-box">
-				<div class="col-md-6 col-md-offset-3 text-centddddddddddddddddddddddddddddddddddddddddddddddddder fh5co-heading" align="left">
-					<!-- <img style="max-width:100%" src="https://www.abc.net.au/news/image/9255140-3x2-940x627.jpg#tl-1126363629378076675;'" class="alwaysThinglink"/><script async charset="utf-8" src="https://cdn.thinglink.me/jse/embed.js"></script> -->
+				<div class="fh5co-heading" align="left">
 					<p>Advertisers are interested in tracking us - watching your browsing habits helps them predict what you are most likely to buy next! </p>
-					<p>Try searching "car accident" on Google; it will probably give you a few ads for lawyers. If you search for "car accident lawyer", you'll will get plenty of in-your-face ads for lawyers, with some that even know your approximate location. </p>
+					<p>Try searching "car accident" on Google; it will probably give you a few ads for lawyers. If you search for "car accident lawyer", you will get plenty of in-your-face ads for lawyers, with some that even know your approximate location. </p>
 				</div>
 			</div>
 		</div>
@@ -139,19 +135,48 @@
 
 	<div id="fh5co-explore" class="fh5co-bg-section">
 		<div class="container">
-			<div class="row animate-box">
-				<!--<div classtext-center>-->
-				<!--<center>-->
-				<div class="col-mad-6 col-mad-offset-3 taext-center fh5co-heading">
-					<img src="https://raw.githubusercontent.com/mozilla/lightbeam-we/master/docs/images/lightbeam.gif">
+			<div class="animate-box">
+				<div class="text-center fh5co-heading">
+					<h2>Here's how tracking with cookies works, step-by-step:</h2>
 				</div>
-				<!--</center>-->
-				<!--</div>-->
 			</div>
-		</div>
+			<div class="animate-box">
+				<!--<div class="col-md-8 col-md-push-5 animate-box">
+					<div class="mt">
+						<img class="img-responsive" src="https://raw.githubusercontent.com/mozilla/lightbeam-we/master/docs/images/lightbeam.gif" alt="work">
+					</div>
+				</div>-->
+				<!--<div class="col-md-4 col-md-pull-8 animate-box">-->
+				<div class="animate-box">
+					<div class="fh5co-heading"align="left">
+						<ol class="list-navi" style=";" type="1">
+							<!--<li><i class="icon-circle"></i></li>-->
+							<div class="row animate-box">
+								<li style="margin-bottom: 10px;"><!--<i class="icon-circle"></i>-->You visit a website which is selling data to an advertising company.
+									<div style="padding-left:2em">Since this is the first time the advertising company has seen you, they generate a random unique identifier for you, and place it into your browser's cookies.</div>
+								</li>
+							</div>
+							<div class="row animate-box">
+								<li style="margin-bottom: 10px;"><!--<i class="icon-circle"></i>-->Next, you visit any other website working with the advertising company.
+									<div style="padding-left:2em">Now, they will be able to retrieve that unique identifier from the browser's cookies and report a message back to themselves, which says that the person with this unique identifier is browsing this website at this time.
+								</li>
+							</div>
+							<div class="row animate-box">
+								<li style="margin-bottom: 10px;"><!--<i class="icon-circle"></i>-->Slowly, advertisers will be able to build a decent profile on your browsing habits.</li>
+							</div>
+						</ol>
+						<!--<p><a class="btn btn-primary btn-lg popup-vimeo btn-video" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play"></i> Watch Video</a></p>-->
+					</div>
+				</div>
+			</div>
+		</div>		
+	<!--	<div class="fh5co-explore fh5co-explore1">
+			<div class="container">
+			</div>
+		</div>-->
 	</div>
 
-	<div id="fh5co-explore" class="fh5co-bg-section">
+	<div id="fh5co-explore" class="fh5co-section">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
@@ -159,12 +184,11 @@
 					<h2>Let's look at Firefox Lightbeam</h2>
 				</div>
 			</div>
-		</div>		
-		<div class="fh5co-explore fh5co-explore1">
-			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-push-5 animate-box">
-						<img class="img-responsive" src="http://www.engineeringradio.us/blog/wp-content/uploads/2013/10/lightbeam.jpg" alt="work">
+						<div class="mt">
+							<img class="img-responsive" src="https://raw.githubusercontent.com/mozilla/lightbeam-we/master/docs/images/lightbeam.gif" alt="work">
+						</div>
 					</div>
 					<div class="col-md-4 col-md-pull-8 animate-box">
 						<div class="mt">
@@ -174,65 +198,203 @@
 								<li><i class="icon-triangle-up"></i>Every triangle connected to a websites is a cookie that a website is storing</li>
 								<li><i class="icon-flow-line"></i>If a cookie is connected to multiple websites, then those connected websites are sharing information</li>
 							</ul>
-							<p><a class="btn btn-primary btn-lg popup-vimeo btn-video" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play"></i> Watch Video</a></p>
+							<!--<p><a class="btn btn-primary btn-lg popup-vimeo btn-video" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play"></i> Watch Video</a></p>-->
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-
-		<div class="fh5co-explore">
+		</div>		
+	<!--	<div class="fh5co-explore fh5co-explore1">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-pull-1 animate-box">
-						<img class="img-responsive" src="https://prod-cdn.sumo.mozilla.net/uploads/images/2013-10-30-12-29-38-a3f885.png" alt="work">
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="mt">
-							<div>
-								<h4><i class="icon-user"></i>Real Project For Real Solutions</h4>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. </p>
-							</div>
-							<div>
-								<h4><i class="icon-video2"></i>Real Project For Real Solutions</h4>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							</div>
-							<div>
-								<h4><i class="icon-shield"></i>Real Project For Real Solutions</h4>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. </p>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
-		</div>
+		</div>-->
 	</div>
 
-	<div id="fh5co-explore" class="fh5co-bg-section">
+
+
+	<!--<div id="fh5co-explore" class="fh5co-bg-section">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<!-- <img style="max-width:100%" src="https://www.abc.net.au/news/image/9255140-3x2-940x627.jpg#tl-1126363629378076675;'" class="alwaysThinglink"/><script async charset="utf-8" src="https://cdn.thinglink.me/jse/embed.js"></script> -->
-					<h2>Take A Course</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+					<!~~ <img style="max-width:100%" src="https://www.abc.net.au/news/image/9255140-3x2-940x627.jpg#tl-1126363629378076675;'" class="alwaysThinglink"/><script async charset="utf-8" src="https://cdn.thinglink.me/jse/embed.js"></script> ~~>
+					<h2>Let's look at Firefox Lightbeam</h2>
+				</div>
+			</div>
+		</div>		
+		<div class="fh5co-explore fh5co-explore1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 animate-box">
+						<div class="mt">
+							<img class="img-responsive" src="https://raw.githubusercontent.com/mozilla/lightbeam-we/master/docs/images/lightbeam.gif" alt="work">
+						</div>
+					</div>
+					<div class="col-md-4 col-md-pull-8 animate-box">
+						<div class="mt">
+							<h3>Firefox Lightbeam lets you explore how websites are using cookies to share information</h3>
+							<ul class="list-nav">
+								<li><i class="icon-circle-with-plus"></i>Every icon is a website</li>
+								<li><i class="icon-triangle-up"></i>Every triangle connected to a websites is a cookie that a website is storing</li>
+								<li><i class="icon-flow-line"></i>If a cookie is connected to multiple websites, then those connected websites are sharing information</li>
+							</ul>
+							<!~~<p><a class="btn btn-primary btn-lg popup-vimeo btn-video" href="https://vimeo.com/channels/staffpicks/93951774"><i class="icon-play"></i> Watch Video</a></p>~~>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<div id="fh5co-explore" class="fh5co-bg-section">
 		<div class="container">
+			<div class="row animate-box text-center">
+				<h3>After visiting just a couple of websites, we can already see that plenty are sharing cookies to track our browsing habits (what we've been searching, where we've been visiting, etc.):</h3>
+			</div>
+			<br />
 			<div class="row animate-box">
-				<!--<div class=text-center>-->
-				<center>
-					<img style="max-width:100%" src="https://www.abc.net.au/news/image/9255140-3x2-940x627.jpg#tl-1126363629378076675;'" class="alwaysThinglink"/><script async charset="utf-8" src="https://cdn.thinglink.me/jse/embed.js"></script>
-				</center>
+				<!--<div classtext-center>-->
+				<!--<center>-->
+				<div class="col-mad-6 col-mad-offset-3 taext-center fh5co-heading">
+					<img class="img-responsive" src="http://www.engineeringradio.us/blog/wp-content/uploads/2013/10/lightbeam.jpg" alt="work">
+				</div>
+				<!--</center>-->
 				<!--</div>-->
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-project">
+	<!--<div id="fh5co-explore" class="fh5co-bg-section">
+		<div class="container">
+		</div>
+	</div>-->
+
+	<!--<div id="fh5co-explore" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row animate-box text-center">
+				<h3>And once you've been browsing for a while, there are just so many connections that everything gets confusing:</h3>
+			</div>
+		</div>
+	</div>-->
+
+	<div id="fh5co-explore" class="fh5co-section">
+		<div class="container">
+			<div class="row animate-box text-center">
+				<h3>And once you've been browsing for a while, there are just so many connections that everything gets confusing:</h3>
+				<br />
+				<img class="img-responsive" src="https://prod-cdn.sumo.mozilla.net/uploads/images/2013-10-30-12-29-38-a3f885.png" alt="work">
+				<!--<div class="mt">
+				</div>-->
+				<!--<div class="mt">
+				</div>-->
+			</div>
+		</div>
+	</div>
+			<!--<div class="row">
+				<div class="col-md-8 col-md-pull-1 animate-box">
+					<div class="mt">
+						<img class="img-responsive" src="https://prod-cdn.sumo.mozilla.net/uploads/images/2013-10-30-12-29-38-a3f885.png" alt="work">
+					</div>
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="mt">
+						<div>
+							<h4><i class="icon-user"></i>Real Project For Real Solutions</h4>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. </p>
+						</div>
+						<div>
+							<h4><i class="icon-video2"></i>Real Project For Real Solutions</h4>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+						</div>
+						<div>
+							<h4><i class="icon-shield"></i>Real Project For Real Solutions</h4>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. </p>
+						</div>
+					</div>
+				</div>
+			</div>-->
+
+	<div id="fh5co-explore" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row animate-box">
+				<!--<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">-->
+				<div class="fh5co-heading">
+					<!-- <img style="max-width:100%" src="https://www.abc.net.au/news/image/9255140-3x2-940x627.jpg#tl-1126363629378076675;'" class="alwaysThinglink"/><script async charset="utf-8" src="https://cdn.thinglink.me/jse/embed.js"></script> -->
+					<div class="row animate-box">
+						<p>We can see that there's <i>plenty</i> of tracking happening across the internet.</p>
+					</div>
+					<div class="row animate-box">
+						<h3>Most online tracking is from advertisers, who collect your data to make more money by targeting their ads at you.<br />They know what you're interested in, and thus know which ads you'll click on and buy things from, based on the info they've collected.</h3>
+					</div>
+					<br id="governmentaccess"/>
+					<div class="row animate-box">
+						<h3>But advertisers aren't the only ones interested in your data; governments also collect data with the intent to improve national security.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-explore" class="fh5co-section">
+		<div class="container">
+			<div align="center">
+				<div class="row animate-box">
+					<h2>The Snowden Leaks</h2>
+				</div>
+				<div class="fh5co-heading" style="margin-bottom: 10px;" align="left">
+					<div class="row animate-box">
+						<p>In 2013, Edward Snowden was working for the NSA as a contractor through Booz Allen Hamilton.</p>
+					</div>
+					<div class="row animate-box">
+						<p>While working, Snowden observed and became increasingly concerned with the government's mass surveillance programs. He considered them to be government overstep, especially considering that the public had no idea about them.</p>
+					</div>
+					<div class="row animate-box">
+						<p>As a systems administrator, he had privileged access and was able to pull confidential documents virtually untraced.</p>
+					</div>
+					<div class="row animate-box">
+						<p>So, he made the decision that he would leak documents on the many government surveillance programs to let the public be aware.</p>
+					</div>
+				</div>
+				<!--<div class="row animate-box fh5co-heading" style="margin-bottom: 10px;" align="left">
+					<p>In 2013, Edward Snowden was working for the NSA as a contractor through Booz Allen Hamilton.</p>
+					<p>While working, Snowden observed and became increasingly concerned with the government's mass surveillance programs. He considered them to be government overstep, especially considering that the public had no idea about them.</p>
+					<p>As a systems administrator, he had privileged access and was able to pull confidential documents virtually untraced.</p>
+					<p>So, he made the decision that he would leak documents on the many government surveillance programs to let the public be aware.</p>
+				</div>-->
+				<div class="row animate-box" align="center">
+					<h3>Here are the biggest revelations from the documents Snowden leaked:</h3>
+				</div>
+				<div class="row animate-box" align="center">
+					<div>
+						<img style="max-width:100%" src="https://www.abc.net.au/news/image/9255140-3x2-940x627.jpg#tl-1126363629378076675;'" class="alwaysThinglink"/><script charset="utf-8" src="https://cdn.thinglink.me/jse/embed.js"></script>
+					</div>
+					<h6 style="color: inherit; margin-top: 5px;">
+						This ThingLink is a visualization of 
+						<a href="https://mashable.com/2014/06/05/edward-snowden-revelations/#ZahhyAhILPq9">
+							the compilation provided by Lorenzo Franceschi-Bicchierai at Mashable
+						</a>
+					</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-explore" class="fh5co-bg-section">
+		<div class="container">
+			<div align="center">
+				<div class="row animate-box fh5co-heading">
+					<h2 style="margin-bottom: inherit">How can surveillance in the name of national security be a threat to me?</h2>
+					<p>Should I be concerned?</p>
+				</div>
+				<div class="row animate-box">
+					<iframe width="940" height="529" src="https://www.youtube-nocookie.com/embed/0hLjuVyIIrs?start=429&end=472&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<p>
+					You can see <a target="_blank" rel="noopener noreferrer" href="https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance">the full interview with The Guardian</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!--<div id="fh5co-project" class="fh5co-section">
 		<div class="container-fluid proj-bottom">
 			<div class="row">
 				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
@@ -294,17 +456,17 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	
 	<div id="fh5co-started" style="background-image:url(images/img_bg_2.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
-			<div class="row animate-box">
+			<!--<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Lets Get Started</h2>
 					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 				</div>
-			</div>
+			</div>-->
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<p><a href="protect.html" class="btn btn-default btn-lg">Learn how to protect your privacy</a></p>
@@ -315,7 +477,7 @@
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
-			<div class="row row-pb-md">
+			<!--<div class="row row-pb-md">
 				<div class="col-md-3 fh5co-widget">
 					<h4>About Learning</h4>
 					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
@@ -362,7 +524,7 @@
 						<li><a href="#">API</a></li>
 					</ul>
 				</div>
-			</div>
+			</div>-->
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
@@ -371,12 +533,12 @@
 						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
 					</p>
 					<p>
-						<ul class="fh5co-social-icons">
+						<!--<ul class="fh5co-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
 							<li><a href="#"><i class="icon-linkedin"></i></a></li>
 							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
+						</ul>-->
 					</p>
 				</div>
 			</div>
