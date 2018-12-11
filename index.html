@@ -86,9 +86,6 @@
 		</div> -->
 		<div class="top-menu">
 			<div class="container">
-				<div class="row text-right">
-					<h6 style="margin-bottom: 30px;"><a href="sources.html" style="color: DimGray">Sources</a></h6>
-				</div>
 				<div class="row">
 					<div class="col-xs-4" style="width: 35%; padding-left: 3px; padding-right: 3px;">
 						<div id="fh5co-logo"><a href="index.html" style="color: #EA9215">Your Digital Footprint</a></div>
@@ -145,7 +142,7 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 fh5co-heading">
 					<!-- <h2>Showcase of A Finish Projects</h2> -->
-					<p>The Internet is one of the most rapidly changing creations in the history of mankind. Every change to the Internet brings about changes to fundamental aspects of our daily lives. For example, being social and interacting with other people can be seen in a whole new light with the advent of social media and networking sites. Similarly, privacy and security have transformed into something completely different than what they used to be thirty years ago. As a result, privacy policies in the US, like the Electronic Communications Privacy Act (ECPA), has not been able to keep up with the changes to the way we use technology and the Internet and how that affects our privacy (White House Report 49).</p><br>
+					<p>The Internet is one of the most rapidly changing creations in the history of mankind. Every change to the Internet brings about changes to fundamental aspects of our daily lives. For example, being social and interacting with other people can be seen in a whole new light with the advent of social media and networking sites. Similarly, privacy and security have transformed into something completely different than what they used to be thirty years ago. As a result, privacy policies in the US, like the <a href="https://obamawhitehouse.archives.gov/sites/default/files/docs/big_data_privacy_report_may_1_2014.pdf">Electronic Communications Privacy Act (ECPA)</a>, has not been able to keep up with the changes to the way we use technology and the Internet and how that affects our privacy.</p><br>
 					<p>However, this is not our biggest problem; the biggest problem lies in the fact that we, as users of the Internet, have chosen to ignore any and all privacy concerns when it comes to using the Internet. We seem to have accepted the fact that in order to use the Internet, we must give up our right to have our personal and sensitive information private. This website addresses this concern by pointing out the flaws of Internet privacy and informing readers about the ways to protect their personal information.</p>
 				</div>
 			</div>
@@ -158,7 +155,7 @@
 				<div class="col-md-8 col-md-offset-2 fh5co-heading">
 					<h2 style="text-align: center;">Should I Be Worried?</h2>
 					<p>In order to demonstrate the extent of the issues surrounding Internet privacy, it would be rather beneficial to have you answer this question for yourself. To do that, it is important to understand what exactly is at stake here.</p>
-					<p>For example, you might be surprised to know that the Google Map shown below has a dropped pin over your approximate location which we were able to obtian without requiring your permission.</p>
+					<p>For example, you might be surprised to know that the Google Map shown below has a dropped pin over your approximate location which we were able to <a href="https://ipapi.co/">obtain without requiring your permission</a>.</p>
 				</div>
 				<div id="myMap" style="width:100%; height:400px;"></div>
 			</div>
@@ -170,7 +167,7 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 fh5co-heading">
 					<!-- <h2 style="text-align: center;">Should I Be Worried?</h2> -->
-					<p>In addition to your location, we were able to obtain your browser fingerprint. "Browser fingerprinting uses individual characteristics of your browser to identify you, often uniquely, without cookies." (Kernighan 211)</p>
+					<p>In addition to your location, we were able to <a href="https://clientjs.org/">obtain your browser fingerprint</a>. "Browser fingerprinting uses individual characteristics of your browser to identify you, often uniquely, without cookies." -Brian W. Kernighan, "<a href="http://testfor380.web.unc.edu/final-project-details/footnotes/">Understanding the Digital World</a>"</p>
 					<p>What this fingerprint means is that we can uniquely identify you if you were to ever visit our website again, and the characteristics that were used to create this fingerprint again didn't require any permissions.</p>
 					<p>Below is a summary of just some of the data we were able to obtain about you including your uniquely-identifying browser fingerprint, IP Address, and location.</p>
 					<br>
@@ -216,8 +213,8 @@
 			</div>
 			<div class="row text-center">
 				<div class="col-md-6 text-center animate-box">
-					<span id="device" class="fh5co-counter"></span>
-					<span class="fh5co-counter-label">Your Device</span>
+					<span id="engine" class="fh5co-counter"></span>
+					<span class="fh5co-counter-label">Your Web Browser Engine</span>
 				</div>
 				<div class="col-md-6 text-center animate-box">
 					<span id="cpu" class="fh5co-counter"></span>
@@ -237,7 +234,7 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 fh5co-heading">
 					<!-- <h2 style="text-align: center;">Should I Be Worried?</h2> -->
-					<p>It is worth noting that this data is what a group of college students were able to obtain (and collect if we so wish) with only a couple of hours of work and no prior JavaScript knowledge. Yet, it is enough to locate and uniquely identify you.</p>
+					<p>It is worth noting that this data is what a group of college students were able to obtain (and collect if we so wish) with only a few hours of work and no prior JavaScript knowledge. Yet, it is enough to locate and uniquely identify you.</p>
 					<p>In addition, this data is only a small fraction of what companies know and collect about you nowadays. You can <a href="collection.html">click here</a> to learn more about data collection and the common tracking techniques used today.</p>
 					<br>
 				</div>
@@ -559,6 +556,17 @@
 		</div>
 	</div> -->
 
+	<div id="fh5co-started" style="background-image:url(images/img_bg_2.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<p><a href="sources.html" class="btn btn-default btn-lg">Sources</a>&nbsp;&nbsp;<a href="privacy.html" class="btn btn-default btn-lg">What is Internet Privacy?</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 			<!-- <div class="row row-pb-md">
@@ -681,11 +689,10 @@
 		document.getElementById("fingerprint").setAttribute("data-to", client.getFingerprint());
 		document.getElementById("browser").textContent = client.getBrowser() + " " + client.getBrowserMajorVersion();
 		document.getElementById("os").textContent = client.getOS() + " " + client.getOSVersion();
-		document.getElementById("device").textContent = client.getDevice();
-		if(!client.getDevice()) {
-			document.getElementById("device").textContent = "N/A";
-		}
+		document.getElementById("engine").textContent = client.getEngine() + " " + client.getEngineVersion();
+		if(!client.getEngine()) {document.getElementById("engine").textContent = "N/A";}
 		document.getElementById("cpu").textContent = client.getCPU();
+		if(!client.getCPU()) {document.getElementById("cpu").textContent = "N/A";}
 		document.getElementById("resolution").textContent = client.getCurrentResolution();
 		document.getElementById("language").textContent = client.getLanguage();
 
